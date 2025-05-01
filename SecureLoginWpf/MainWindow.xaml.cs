@@ -27,35 +27,6 @@ namespace SecureLoginWpf
         {
             InitializeComponent();
         }
-
-        //private async void Login_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Windows Hello Check
-        //    if (!await WindowsHelloService.CheckAvailabilityAsync())
-        //    {
-        //        MessageBox.Show("Windows Hello is not available or not set up.", "Biometric Auth", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return;
-        //    }
-
-        //    bool verified = await WindowsHelloService.RequestBiometricVerificationAsync();
-        //    if (!verified)
-        //    {
-        //        MessageBox.Show("Biometric authentication failed or was canceled.", "Login", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return;
-        //    }            
-
-        //    // TPM Key Flow
-        //    if (!TpmCryptoService.GenerateTPMBoundKey())
-        //    {
-        //        MessageBox.Show("TPM key generation failed.", "TPM Error", MessageBoxButton.OK, MessageBoxImage.Error);
-        //        return;
-        //    }
-
-        //    MessageBox.Show("Login successful using Windows Hello and TPM-backed key!", "Login", MessageBoxButton.OK, MessageBoxImage.Information);
-
-        //    //var encryptedPassword = EncryptHelper.Encrypt(password);
-        //    //MessageBox.Show($"Login successful with Windows Hello.\nUsername: {username}\nEncrypted Password: {encryptedPassword}", "Login", MessageBoxButton.OK, MessageBoxImage.Information);
-        //}
         private async void OnRegister(object sender, RoutedEventArgs e)
         {
             // Windows Hello Check
